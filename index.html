@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Optional: Custom styles can go here */
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <nav class="bg-gray-900 p-4 shadow-lg">
+        <div class="container mx-auto">
+            <a href="#" class="text-white text-lg font-semibold">Student Management System</a>
+        </div>
+    </nav>
+    <div class="container mx-auto mt-8">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <!-- Add Student Button -->
+            <div class="flex justify-between items-center mb-6">
+                <h1 class="text-xl font-bold text-gray-700">Students</h1>
+                <a href="add.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-200 ease-in-out">Add Student</a>
+            </div>
+          
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <input type="text" placeholder="Search by Full Name" class="form-input border-2 border-gray-300 p-2 rounded w-full focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition duration-200">
+                
+                <div>
+                    <span class="font-semibold">Course:</span>
+                    <div class="mt-2">
+                        <label class="inline-flex items-center p-1"><input type="radio" name="course" value="BS-CS" class="form-radio mr-2 text-blue-500">BS-CS</label>
+                        <label class="inline-flex items-center p-1"><input type="radio" name="course" value="BS-DS" class="form-radio mr-2 text-blue-500">BS-DS</label>
+                        <label class="inline-flex items-center p-1"><input type="radio" name="course" value="BS-IT" class="form-radio mr-2 text-blue-500">BS-IT</label>
+                        <label class="inline-flex items-center p-1"><input type="radio" name="course" value="BS-IS" class="form-radio mr-2 text-blue-500">BS-IS</label>
+                    </div>
+                </div>
+               
+                <div>
+                    <span class="font-semibold">Gender:</span>
+                    <div class="mt-2">
+                        <label class="inline-flex items-center p-1"><input type="radio" name="gender" value="Male" class="form-radio mr-2 text-blue-500">Male</label>
+                        <label class="inline-flex items-center p-1"><input type="radio" name="gender" value="Female" class="form-radio mr-2 text-blue-500">Female</label>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="overflow-x-auto">
+                <table class="table-auto w-full text-left">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="border px-4 py-2">Full Name</th>
+                            <th class="border px-4 py-2">Course</th>
+                            <th class="border px-4 py-2">Gender</th>
+                            <th class="border px-4 py-2">Age</th>
+                            <th class="border px-4 py-2">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-100">
+                            <td class="border px-4 py-2">Diwata Pares Overload</td>
+                            <td class="border px-4 py-2">BS-CS</td>
+                            <td class="border px-4 py-2">Male</td>
+                            <td class="border px-4 py-2">22</td>
+                            <td class="border px-4 py-2">
+                                <button class="bg-gray-900 hover:bg-gray-900 text-white font-bold py-1 px-3 rounded transition duration-200 ease-in-out">Update</button>
+                                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded transition duration-200 ease-in-out">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- More rows can be added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
